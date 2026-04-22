@@ -40,11 +40,11 @@
 
     /* ── NAV ── */
     nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 1000;
       height: 62px; display: flex; align-items: center; justify-content: space-between;
       padding: 0 5vw;
-      background: rgba(13, 17, 23, 0.8); backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
+      background: rgba(13, 17, 23, 0.8); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border); transition: all 0.3s ease;
     }
     .nav-logo {
       display: flex; align-items: center; gap: 10px;
@@ -89,20 +89,20 @@
     /* ── HERO ── */
     #home {
       min-height: 100vh; display: flex; align-items: center;
-      padding: 100px 5vw 80px; position: relative; overflow: hidden;
+      justify-content: center; padding-top: 80px; overflow: hidden;
     }
     .hero-grid {
-      position: absolute; inset: 0; pointer-events: none;
+      position: absolute; inset: 0; pointer-events: none;top: 0; left: 0; width: 100%; height: 100%;
       background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
-      background-size: 60px 60px;
-      mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 20%, transparent 100%);opacity: 0.4;background-size: 50px 50px;
+      background-size: 40px 40px;
+      mask-image: radial-gradient(circle, black, transparent 100%);opacity: 0.4;background-size: 50px 50px;
     }
     .hero-glow {
-      position: absolute; right: -120px; top: 40%; transform: translateY(-50%);
-      width: 700px; height: 700px; pointer-events: none;
-      background: radial-gradient(circle, rgba(249,115,22,.08) 0%, transparent 65%);
+      position: absolute;top: 50%; left: 50%; right: -120px; transform: translate(-50%, -50%);
+      width: 500px; height: 500px; pointer-events: none;
+      background: var(--oglow) 0%, transparent 65%); filter: blur(120px); border-radius: 50%; z-index: 0;  opacity: 0.4;
     }
-    .hero-inner { position: relative; z-index: 1; max-width: 1100px;margin: 0 auto; display: flex;flex-direction: column;align-items: center;}
+    .hero-inner { position: relative; z-index: 1; max-width: 1200px;margin: 0 auto; text-align: center; display: flex;flex-direction: column;align-items: center;}
 
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
@@ -125,10 +125,10 @@
     h1 .sub { display: block; font-size: clamp(1.2rem, 2.8vw, 2.2rem); color: var(--silver); font-weight: 500; margin-top: 10px; }
 
     .hero-desc {
-      font-size: 1.05rem; color: var(--silver); line-height: 1.75;
-      max-width: 700px; margin-bottom: 40px; animation: fadeUp .8s .2s ease both;margin-left: auto;margin-right: auto;
+      font-size: 1.2rem; color: var(--silver); line-height: 1.6;
+      max-width: 750px; margin: 0 auto 32px auto; opacity: 0.9; animation: fadeUp .8s .2s ease both;margin-left: auto;margin-right: auto;
     }
-    .hero-btns { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 60px; animation: fadeUp .8s .3s ease both;justify-content: center; }
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 60px; animation: fadeUp .8s .3s ease both;justify-content: center; width: 100%;}
     .btn-main {
       background: var(--orange); color: #fff; padding: 13px 30px; border-radius: 3px;
       border: 2px solid var(--orange); font-family: var(--hfont); font-size: .92rem; font-weight: 700;
