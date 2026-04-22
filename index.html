@@ -291,6 +291,10 @@
     .footer-links a { font-size: .78rem; color: var(--dim); transition: color .2s; }
     .footer-links a:hover { color: var(--orange); }
 
+    .why-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .nav-links { display: none; }
@@ -307,6 +311,7 @@
       .footer-bottom { flex-direction: column; text-align: center; }
       .why-grid { grid-template-columns: 1fr; }
     }
+    
   </style>
 </head>
 
@@ -349,11 +354,16 @@
       Alagoinhas · Catu · Pojuca — BA
     </div>
     <h1>
-      Estruturas &amp; <span class="hl">Automação</span>
-      <span class="sub">Engenharia que constrói resultados</span>
+       Automação e <span class="hl">Estruturas</span> que Aumentam sua Produção
+      <span class="sub">
+        Reduza paradas, aumente produtividade e execute projetos com engenharia de verdade.
+      </span>
     </h1>
     <p class="hero-desc">
-      Somos uma empresa familiar de engenharia especializada em estruturas metálicas e automação industrial e residencial. Do galpão à fábrica, da instalação ao sistema de controle — soluções completas no Recôncavo Baiano.
+      Somos uma emprresa de engenharia especializada com experiência em campo em estruturas metálicas e automação industrial e residencial. Do galpão à fábrica, da instalação ao sistema de controle — soluções completas no Recôncavo Baiano.
+    </p>
+    <p style="margin-top:10px; color:#94a3b8; font-size:.9rem;">
+      Especialistas em automação industrial e estruturas metálicas na Bahia — atendendo Catu, Alagoinhas e Pojuca.
     </p>
     <div class="hero-btns">
       <a href="https://wa.me/5575998828918?text=Olá!%20Gostaria%20de%20conhecer%20as%20soluções%20da%20Fiscina." target="_blank" class="btn-main">
@@ -444,9 +454,38 @@
     </div>
 
   </div>
+  
 </section>
 
+<!-- PROJETOS -->
+<section id="resultados" style="background:#111820;">
+  <div class="section-header">
+    <div class="sec-label">Resultados</div>
+    <div class="sec-title">Impacto <span class="hl">Real</span></div>
+    <p class="sec-desc">Resultados mensuráveis que impactam diretamente sua operação.</p>
+  </div>
 
+  <div class="why-grid">
+    <div class="why-card">
+      <span class="why-icon">📈</span>
+      <div class="why-title">+20% Produtividade</div>
+      <p class="why-desc">Otimização de processos com automação inteligente.</p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-icon">⏱️</span>
+      <div class="why-title">-15% Tempo de Ciclo</div>
+      <p class="why-desc">Redução de gargalos produtivos.</p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-icon">⚙️</span>
+      <div class="why-title">Menos Paradas</div>
+      <p class="why-desc">Diagnóstico e automação que evitam falhas.</p>
+    </div>
+  </div>
+</section>
+  
 <!-- PROJETOS -->
 <section id="projetos">
   <div class="section-header">
@@ -530,7 +569,42 @@
 
   </div>
 </section>
+  
+<!-- MISSÃO, VISÃO E VALORES -->
+<section id="institucional">
+  <div class="section-header">
+    <div class="sec-label">Institucional</div>
+    <div class="sec-title">Nossa <span class="hl">Essência</span></div>
+  </div>
 
+  <div class="why-grid">
+
+    <div class="why-card">
+      <span class="why-icon">🎯</span>
+      <div class="why-title">Missão</div>
+      <p class="why-desc">
+        Desenvolver soluções em automação e estruturas que aumentem produtividade e reduzam custos.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-icon">🚀</span>
+      <div class="why-title">Visão</div>
+      <p class="why-desc">
+        Ser referência na Bahia em engenharia aplicada à indústria.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-icon">⚖️</span>
+      <div class="why-title">Valores</div>
+      <p class="why-desc">
+        Compromisso, segurança, ética e foco em resultados.
+      </p>
+    </div>
+
+  </div>
+</section>
 
 <!-- EQUIPE -->
 <section id="equipe">
@@ -782,6 +856,27 @@
     obs.observe(el);
   });
 </script>
-
+  
+<a href="https://wa.me/5575998828918" target="_blank" class="whatsapp-float">
+💬
+</a>
+<a href="https://wa.me/5575999448040" target="_blank" class="whatsapp-float">
+💬
+</a>
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #22c55e;
+  color: white;
+  font-size: 22px;
+  padding: 14px 16px;
+  border-radius: 50%;
+  z-index: 999;
+  box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
+</style>
+  
 </body>
 </html>
